@@ -1,54 +1,30 @@
-# SchoolManagmentSystem
-This code is a part of a larger system for managing teachers and courses, and it provides basic functionality for retrieving and displaying information about teachers and courses.
-This Java code defines three classes, Teacher, and Course, which are part of a system for managing and calculating payments for teachers based on the courses they teach. Below is a description of each class and its functionality:
+# Teacher and Course Management Model
 
-Teacher Class
-Attributes:
+> Historical coursework · Birzeit University Computer Engineering portfolio
 
-name: A private String attribute representing the teacher's name.
-ID: A private integer attribute representing the teacher's ID.
-basicSalary: A private double attribute representing the teacher's basic salary.
-extraPaymentRate: A private double attribute representing the rate of extra payment.
-coursesTaught: An array of Course objects representing the courses taught by the teacher.
-Constructors:
+A Java domain-model exercise for representing teachers, courses, teaching assignments, and payment calculations.
 
-Default constructor: Initializes the class with default values.
-Parameterized constructor: Initializes the class with values for all attributes.
-Getter and Setter Methods: Provides methods for getting and setting the values of the private attributes.
+## What this demonstrates
 
-printInfo() Method: Prints the full information of the teacher, including name, ID, extra payment rate, and basic salary.
+- Java
+- object-oriented modeling
+- encapsulation
+- business rules
 
-countCourseLevel(int level) Method:
+## Repository contents
 
-Takes an integer argument level (1 to 4).
-Counts the number of courses taught by the teacher at the specified level.
-Returns the count of courses at that level or the total count of courses if level is not in the range [1, 4].
-printCourses() Method: Prints the names and IDs of the courses taught by the teacher.
+`Teacher.java` and `Course.java` define the domain; `Driver.java` demonstrates the workflow.
 
-calculateExtraPayment() Method:
+## Getting started
 
-Calculates the extra payment for the teacher based on the formula provided.
-The formula multiplies the extraPaymentRate by the sum of products of each course level's count and the level itself.
-Returns the calculated extra payment.
-Course Class
-Attributes:
+Compile the Java sources and run `Driver`.
 
-name: A private String attribute representing the course's name.
-ID: A private integer attribute representing the course's ID.
-Constructors:
+> This is an academic project preserved as portfolio evidence. Review and configure any environment-specific paths, credentials, hardware pins, or dependencies before running it.
 
-Default constructor: Initializes the class with default values.
-Parameterized constructor: Initializes the class with values for both attributes.
-printInfo() Method: Prints the name and ID of the course.
+## Credits
 
-Getter and Setter Methods: Provides methods for getting and setting the values of the private attributes.
+Academic/portfolio work by Noura Manassra. Original commit history is preserved.
 
-Usage Notes
-The Teacher class represents information about a teacher, including their name, ID, basic salary, extra payment rate, and the courses they teach.
-The Course class represents information about a course, including its name and ID.
-The code contains getter and setter methods for accessing and modifying the attributes of both classes.
-The calculateExtraPayment method calculates the extra payment for a teacher based on their courses' levels and the provided rate.
-The printCourses method prints the names and IDs of the courses taught by a teacher.
-The countCourseLevel method counts the number of courses at a specified level taught by a teacher.
-The code includes constructors to initialize objects of both classes.
-The code has a printInfo method in both classes to display the details of a teacher or course.
+## Portfolio focus
+
+This repository supports my broader focus on **Backend + AI engineering**, including APIs, data, intelligent systems, security, systems fundamentals, and practical problem-solving.
